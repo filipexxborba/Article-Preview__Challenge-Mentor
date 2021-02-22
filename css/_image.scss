@@ -1,0 +1,18 @@
+.image-side{
+    flex: 1;
+    
+    
+    img{
+        // max-width: 100%;
+        object-fit: cover;
+        border-top-left-radius: rem(15);
+        border-bottom-left-radius: rem(15);
+        width: rem(350);
+        height:rem(355);
+
+        @include device(phone){
+            width: 100%;
+            border-radius: rem(0);
+        }
+    }
+}

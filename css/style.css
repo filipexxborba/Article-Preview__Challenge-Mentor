@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 500;
+  font-size: 0.8125em;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  background: #ecf2f8;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 0.9375rem;
+  background: white;
+  -webkit-box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 759px) {
+  .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0rem 2rem;
+    border-radius: 0rem;
+  }
+}
+
+.image-side {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.image-side img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 0.9375rem;
+  border-bottom-left-radius: 0.9375rem;
+  width: 21.875rem;
+  height: 22.1875rem;
+}
+
+@media screen and (max-width: 759px) {
+  .image-side img {
+    width: 100%;
+    border-radius: 0rem;
+  }
+}
+
+.text-side {
+  position: relative;
+  padding: 1rem 4rem;
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (max-width: 759px) {
+  .text-side {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.text-side h1 {
+  font-weight: 700;
+  font-size: 3em;
+  color: #48556a;
+  max-width: 25ch;
+  margin-bottom: 1rem;
+}
+
+.text-side p {
+  line-height: 1.5em;
+  max-width: 45ch;
+  font-size: 2em;
+  margin-bottom: 2rem;
+  color: #9eafc2;
+}
+
+.text-side__autor {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.text-side__autor img {
+  max-width: 20%;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+
+.text-side__autor__info {
+  margin-left: 1rem;
+}
+
+.text-side__autor__info h2 {
+  font-size: 4em;
+  font-weight: 700;
+  color: #48556a;
+  margin-bottom: 0.25rem;
+}
+
+.text-side__autor__info p {
+  font-size: 3em;
+  color: #6d7f97;
+}
+
+.text-side .share-button {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  bottom: 1.875rem;
+  padding: 1rem;
+  background: #ecf2f8;
+}
+
+.share-div {
+  background: #48556a;
+  -webkit-box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0.5rem 1rem;
+  width: 18.75rem;
+  height: 3.125rem;
+  border-radius: 0.9375rem;
+  top: 12.5rem;
+  right: -3.125rem;
+  position: absolute;
+}
+
+@media screen and (max-width: 759px) {
+  .share-div {
+    width: 100%;
+    border-radius: 0rem;
+    border-bottom-left-radius: 0.9375rem;
+    border-bottom-right-radius: 0.9375rem;
+    top: 23.4375rem;
+    right: 0rem;
+  }
+}
+
+.share-div p {
+  display: block;
+  font-size: 4em;
+  margin-right: 2rem;
+}
+
+.share-div__socials {
+  margin-top: 0.25rem;
+}
+
+.share-div__socials a + a {
+  margin-left: 1rem;
+}
+
+.share-div__socials a img {
+  opacity: .7;
+}
+
+.share-div__socials a img:hover {
+  opacity: 1;
+}
+
+.show-modal {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+/*# sourceMappingURL=style.css.map */
